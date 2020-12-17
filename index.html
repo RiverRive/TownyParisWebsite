@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="icon" href="icon.png">
+    <title>Paris Website</title>
+</head>
+<body onresize="changebannerwidth()">
+  <div id="navigation">
+    <nav>
+        <ul>
+            <li id="TownTag"><h1>Towny Paris</h1></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="townmap.html">Town Map</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="about.html">Members</a></li>
+        </ul>
+    </nav>
+  </div>
+  
+    <div class="banner">
+      <img id="bannerlast" src="pb.gif" alt="Old Paris">
+      <img id="banner1" src="bannergrouppic1.jpg" alt="Pic1">
+      <img id="banner2" src="bannergrouppic2.jpg" alt="Pic2">
+      <img id="banner3" src="bannergrouppic3.jpg" alt="Pic3">
+      <img id="banner4" src="bannergrouppic4.jpg" alt="Pic4">
+    </div>
+    
+    <div class="container">
+        <article>
+            <h2>Home</h2>
+            <p>
+              Welcome to the official Towny Paris website. Here you can find a lot of cool info about our town and community. Check out the pages to learn more!
+            </p>
+            <hr>
+            <img src="TownyParisbanner.jpg" alt="Paris Banner"> 
+            <hr>
+            <p>
+              <b>Towny Paris</b> is a Minecraft community that plays on multiplayer towny servers to hopefully one day achieve something more than just a unique Minecraft experience. 
+              Make sure you read the <a href="rules.html">rules</a>. Once you have read and understood the town rules, it's time to begin your journey! 
+              Here, we have provided guides and information on several features we have to offer. Feel free to browse around and discover something new!
+            </p>
+            <p>
+              Current Minecraft servers we play on:
+            </p>
+            <ul>
+              <li>
+                <!-- <img src="thecavernbanner.jpg" alt="TheCavern">
+                <p>Server IP: mc.thecavern.net | Website: <a  href="https://thecavern.net/index.php?route=/">https://thecavern.net/index.php?route=/</a></p> -->
+                <p>We are not currently playing on any server yet!</p>
+              </li>
+            </ul>
+            <p>
+              Paris has many things to offer in-game! We hope to provide farms, animals/grinders, PVP arenas, class wonders, and free plots with zero taxes. 
+              Additionally, we provide an official town discord and a <a href="townmap.html">town map</a>. 
+              If you ever need help or have any questions about the town, feel free to join our discord:
+            </p>
+            <a  href="https://discord.gg/C7zFZx6"><h3 style="text-align:center; font-size:20px;">Towny Paris Discord</h3></a>
+            <p>
+              Paris also includes a department system that allows town members to do many unique things for the town. 
+              Each department gives you access to a variety of roles and ranks. 
+              Join the building department and complete, splendid world wonders! 
+              Or maybe the resource department fits you better? 
+              Collect resources at your leisure for town projects! 
+              After all, we are all here to have fun and enjoy the community.
+            </p>
+        </article>
+    </div> 
+    <script>
+      function changebannerwidth() {
+        var w = (document.body.clientWidth);
+        max = w/2;
+
+        count = -max;
+        x4.style.transform = "matrix(1,0,0,1," + -max + ",0)";
+        x3.style.transform = "matrix(1,0,0,1," + -max + ",0)";
+        x2.style.transform = "matrix(1,0,0,1," + -max + ",0)";
+        x1.style.transform = "matrix(1,0,0,1," + -max + ",0)";
+      }
+        var max = (document.body.clientWidth)/2;
+
+        var x1 = document.getElementById("banner1");
+        var x2 = document.getElementById("banner2");
+        var x3 = document.getElementById("banner3");
+        var x4 = document.getElementById("banner4");
+        x4.style.transform = "matrix(1,0,0,1," + -max + ",0)";
+        x3.style.transform = "matrix(1,0,0,1," + -max + ",0)";
+        x2.style.transform = "matrix(1,0,0,1," + -max + ",0)";
+        x1.style.transform = "matrix(1,0,0,1," + -max + ",0)";
+
+        var arr = [x1, x2, x3, x4];
+        var count = -max;
+
+        setInterval(function() {
+          if(count <= 0){
+            var b = count/max , b2 = b*b, b3 = b2 * b, b4 = b2 * b2, b5 = b4 * b;
+            var c = (max)*(  10*b3 + 15*b4 + 6*b5 );
+            var temp = c + max;
+            c += ( 10*max*( -b3 - 2*b4 - b5 ) );
+            arr[0].style.transform = "matrix(1,0,0,1," + temp + ",0)";
+            arr[1].style.transform = "matrix(1,0,0,1," + c + ",0)";
+            count += max/1000;
+          }
+          else{
+            count = -max;
+            arr[0].style.transform = "matrix(1,0,0,1," + -max + ",0)";
+            arr.push(arr.shift());      
+          }
+        }, 10);
+    </script>
+</body>
+</html>

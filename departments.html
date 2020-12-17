@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png">
+    <title>Paris Website</title>
+</head>
+<body onresize="changedeptcontainerandnav()" onload="changedeptcontainerandnav(),totopFunction()">
+    <div id="navigation">
+        <nav>
+            <ul>
+                <li id="TownTag"><h1>Towny Paris</h1></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="townmap.html">Town Map</a></li>
+                <li><a href="departments.html" class="active">Departments</a></li>
+                <li><a href="about.html">Members</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <hr>
+    <div id="sticky">
+        <nav id="deptnav">
+            <ul style="text-align: left; margin: 0 auto;">
+                <li id="DeptTag"><h2><a href="#dept">Departments</a><h2></li>
+                <li class="nav-dept"><a href="#recruitment">Recruitment</a></li>
+                <li class="nav-dept"><a href="#maintenance">Maintenance</a></li>
+                <li class="nav-dept"><a href="#building">Building</a></li>
+                <li class="nav-dept"><a href="#resources">Resources</a></li>
+                <li class="nav-dept"><a href="#commerce">Commerce</a></li>
+                <li class="nav-dept"><a href="#mapart">Map Art</a></li>
+                <li class="nav-dept"><a href="#terraforming">Terraforming</a></li>
+                <hr>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="deptcontainer" class="container">
+        <article>
+            <h2>Departments</h2>
+            <hr>
+            <div id="dept">
+                <div class="container">
+                    <p>Departments do many unique things that help the town in their unique ways. 
+                        Joining a department is completely voluntary! Members need to understand that there are no bosses, deadlines, or requirements. 
+                        Instead, you would work at your own pace and style! 
+                        Also, you will be given special powers to carry out your objectives, so you will still need to be somewhat responsible. 
+                        But other than that, you are the boss of yourself!
+                    </p>
+                    <hr>
+                    <p>Here are brief descriptions of each department:</p>
+                    <ul style="text-align: left;">
+                        <li><a href="#recruitment"><b style="color: rgb(39, 158, 39);">Recruitment</b></a> - These people invite and help new residents join the town. This includes touring newcomers and selling out plots to them, as well as helping them with rules and commands.</li><br>
+                        <li><a href="#maintenance"><b style="color: rgb(71, 164, 196);">Maintenance</b></a> - These people do random check ups on roads and plots. They clear plots that are unfinished and inactive, and fix roads that might have been griefed. One of the easier tasks, but also one of the most important!</li><br>
+                        <li><a href="#building"><b style="color: rgb(146, 38, 196);">Building</b></a> - These people build absolutely anything, from simple roads to elaborate wonders. Resources and schematic files would be provided.</li><br>
+                        <li><a href="#resources"><b style="color: rgb(243, 29, 214);">Resources</b></a> - Huge support for builders and map artists. As you might have guessed, these people mine for resources needed by the town.</li><br>
+                        <li><a href="#commerce"><b style="color: rgb(184, 176, 72);">Commerce</b></a> - These people maintain shops or create new ones. Shop maintenance includes making sure you have a high personal balance and making sure the shops are full or empty depending on the circumstance.</li><br>
+                        <li><a href="#mapart"><b style="color: rgb(245, 142, 47);">Map Art</b></a> - Map artists do horizontal pixel art, which are then mapped to produce beautiful paintings. A really nifty program that converts any image to minecraft map art would be provided.</li><br>
+                        <li><a href="#terraforming"><b style="color: rgb(236, 65, 65);">Terraforming</b></a> - These people create land on massive scales. This includes clearing mountains and flattening, but also includes pouring tons of lava on the ocean to create stone land for the town.</li><br>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="recruitment">
+                <div class="container">
+                    <h2 style="text-align: center;">Recruitment<h2>
+                        <h3>Mission Statement</h3>
+                            <p>We establish and grow the great community we wish to achieve by helping and guiding new residents to success.</p> 
+ 
+                        <h3>Members</h3>
+                            <nav>
+                                <ul>
+                                    <li class="player"><img src="Zeus_the_boss.png" alt="Zeus_the_boss" class="headpic"><div class="name">Zeus_the_boss</div></li>
+                                    <li class="player"><img src="Hades_the_boss.png" alt="Hades_the_boss" class="headpic"><div class="name">Hades_the_boss</div></li>
+                                    <li class="player"><img src="pbean8.png" alt="pbean8" class="headpic"><div class="name">pbean8</div></li>
+                                    <li class="player"><img src="aatticus.png" alt="aatticus" class="headpic"><div class="name">aatticus</div></li>
+                                    <li class="player"><img src="KristerTheSlayer.png" alt="KristerTheSlayer" class="headpic"><div class="name">KristerTheSlayer</div></li>
+                                </ul>
+                            </nav>
+
+                        <h3>Location</h3>
+                            <p>West wing department building room 1</p>
+
+                        <h3>Prospects</h3>
+                            <p>
+                                As members of this department, you represent our town and our attitude towards others<br>
+                                Do not push others to join our town, invite them but do not force them. If they reject an invite do not feel bad about it, you will have many more chances in the future!<br>
+                                Answer residents who ask questions. If they ask for resources you can use the resource department.<br>
+                                <ol>New resident procedure:<br>
+                                    <li>Welcome them!<br></li>
+                                    <li>Ask them if they would like a tour. If you are busy or lazy, you can skip this.<br></li>
+                                    <li>Ask them if they want a plot. If they want one, find them a plot.<br></li>
+                                    <li>Give them the “Paris Rule Book” for them to keep.<br></li>
+                                    <li>(optional) Add them to the Paris database via bot.<br></li>
+                                    <li>Offer them to join the Paris discord. Your role will allow you to send invites to the discord server. Therefore, when inviting new town members to the Paris discord server, the link should only be placed in town/group chat.</li>
+                                </ol>
+                                If something does not look right in the town report it to mayors/assistants.<br>
+                                Overall be friendly, and respect others.<br>
+                                <b>Members of this department have access to the discord bot. That being said, make sure all town residents have been added to the Paris database.</b>
+                            </p>
+
+                        <h3>Discord Bot Commands (optional but highly recommended)</h3>
+                            <p>
+                                <em>Italicised commands indicate this department’s primary commands.</em><br>
+                                <ul style="text-align: left;">
+                                    <li><b><em>pd/set (ingame player name)  (plot number)  (town)</em></b> - sets player plot number and town. If members is not already in the database a new members will be added automatically.<br></li>
+                                    <li><b><em>pd/set (ingame player name) (town)</em></b> - sets player town. If members is not already in the database a new members will be added automatically.<br></li>  
+                                    <li><b>pd/add (ingame player name)</b> - adds player to the Paris database<br></li>  
+                                    <li><b>pd/get (ingame player name)</b> - gets general player information from Paris database<br></li>  
+                                    <li><b>pd/get (plot number)</b> - gets general player information from Paris database<br></li>  
+                                    <li><b>pd/set (plot number) evict</b> - evicts player from plot, not literally on the minecraft server<br></li>  
+                                    <li><b>pd/set (plot number) perm</b> - permanently sets player resident plot to unevictable<br></li>  
+                                    <li><b><em>pd/give (department key) (member mention)</em></b> - gives a member a discord role<br></li>
+                                    <li><b>pd/save</b> - saves the current data into a file<br></li>
+                                </ul>
+                                <b>Please ask Zeus_the_boss as many questions as needed before first using the bot!</b>
+                            </p>
+
+                        <h3>Discord Channels</h3>
+                            <p>
+                                #recruitment-info is all useful information needed to be known when a part of this department<br>
+                                #recruitment-projects is where all the detailed project overviews will be posted with the addition of any updates to the department.<br>
+                                #recruitment-general is the general chat only accessible to your department members.<br>
+                                Conference Room is the voice channel meant to enhance communication between department members.<br>                        
+                            </p>
+
+                        <h3>In-game Commands</h3>
+                            <p>
+                                <ul style="text-align: left;">
+                                    <li><b>/t add (player)</b> - sending invitations to the town<br></li>
+                                    <li><b>/msg (player) (message)</b> - private messaging<br></li>
+                                    <li><b>/r (message)</b> - private messaging “respond”<br></li>
+                                    <li><b>/plot claim</b> - for new residents to use when giving plots<br></li>
+                                    <li><b>/plot fs</b> - puts a plot "for sale" for a player to claim<br></li>
+                                    <li><b>/player (player name)</b> - player profiles<br></li>
+                                    <li><b>/tpa (player)</b> - teleporting to a player<br></li>
+                                    <li><b>/t reslist</b> - displays all town members<br></li>
+                                    <li><b>/t spawn</b> - teleport to town spawn<br></li>
+                                    <li><b>/help</b> - You should be knowledgeable in many other commands as well.<br></li>
+                                </ul>
+                            </p>            
+
+                        <h3>Pro tips</h3>
+                            <p>
+                                Players will ask to join a town every once in a while, so you can invite them right away if you would like.<br>
+                            </p>
+                            <img src="recruitmentpic.jpg" alt="recruitmentpic">
+                            <p>
+                                Offering a tour of the town before inviting them or sending indirect invitations using dms is a great idea going about inviting new residents and is highly encouraged! This method is very effective in filtering new residents who are better off and who will stay longer in the town community.<br>
+                                If someone you are talking to is undecided whether they should join the town or not, it’s up to you to convince them to join! The more experience you have the better the chance you’ll win them over, so experiment!<br>
+                                Eventually, if you seek to invite new residents a lot, you will realise that there are new players on the server that do not talk at all in chat and who in fact would like to join a town. If you are able to find these players (ie. using tab), then private message them, who knows they might be willing to join the town!<br>
+                            </p>
+
+                        <h3>Extra info</h3>
+                            <p>
+                                Members of this department could earn extra ingame money from mayors for inviting new residents to the town.<br>
+                                Being part of this department is both rewarding and challenging. Many players will appreciate your invites and others will reject them. Being tilt-proof is the best weapon for this department.<br>
+                                If you need help or have any questions about the department please ask other members in the department first before asking help from mayors.<br>
+                                When new members join this department it is highly recommended for senior members of the department to coach them.<br>
+                            </p>
+                </div>
+            </div>
+        
+            <div id="maintenance">
+                <div class="container">
+                    <h2 style="text-align: center;">Maintenance<h2>
+                        <h3>Mission Statement</h3>
+                            <p>Serving our community to enhance the quality of life by dedicating ourselves to maintaining good aesthetics.</p> 
+     
+                        <h3>Members</h3>
+                            <nav>
+                                <ul>
+                                    <li class="player"><img src="Zeus_the_boss.png" alt="Zeus_the_boss" class="headpic"><div class="name">Zeus_the_boss</div></li>
+                                    <li class="player"><img src="aatticus.png" alt="aatticus" class="headpic"><div class="name">aatticus</div></li>
+                                </ul>
+                            </nav>
+    
+                        <h3>Location</h3>
+                            <p>West wing department building room 2</p>
+    
+                        <h3>Prospects</h3>
+                            <p>
+                                Should be very proficient with town rules especially residential plot rules and eviction criteria. Additionally, members of this department should know how towny works.<br>
+                                <b>You are the only department allowed to build and destroy on residential plots.</b> In fact, that is basically the only thing you have to do!<br>
+                                <ol style="list-style-type: circle;">
+                                    <li>If a house is breaking any building rules and the player has been active recently, then notify them through mail, discord or anything you wish.<br></li>
+                                    <li>If a residential plot has a house built but has no owner, you have the choice to either remove the house entirely or preserve the house and put it up for sale depending on how good the house looks. Your call!<br></li>
+                                    <li>If someone wants a pre-built house and you're in a really good mood, you can build someone a brand new house completely, but this is optional.<br></li>
+                                    <li>If there are some minor road griefs or environmental griefs, just fix it real quick, it’s likely just an accident. Otherwise, if there are major griefs, report them to town mayors.<br></li>
+                                </ol>
+                                Weekly (fridays) bot notifications on which plots are no longer going through probation and need to get inspected. When going through inspections...<br>
+                                <ol style="list-style-type: circle;">
+                                    <li>If the plot follows all eviction criteria, evict them and take note of this (via bot)!<br></li>
+                                    <li>If the plot owner has been active within the last 7 days, do nothing and wait until next week for a bot notification for reinspection.<br></li>
+                                    <li>If the plot contains a nice/beautiful/aboveAverage house, the plot is officially a permanent plot and should be taken note of (via bot)! <br></li>
+                                </ol>
+                                In general inspect resident plots and check if residents are following town rules. If something does not look right in the town report it to mayors/assistants.<br>
+                                <b>Members of this department have access to the discord bot. That being said, make sure all owned resident plots have been added to the Paris database.</b><br>
+                            </p>
+    
+                        <h3>Discord Bot Commands (optional but highly recommended)</h3>
+                            <p>
+                                <em>Italicised commands indicate this department’s primary commands.</em><br>
+                                <ul style="text-align: left;">
+                                    <li><b>pd/set (ingame player name)  (plot number)  (town)</b> - sets player plot number and town. If members is not already in the database a new members will be added automatically.<br></li>
+                                    <li><b>pd/set (ingame player name) (town)</b> - sets player town. If members is not already in the database a new members will be added automatically.<br></li>  
+                                    <li><b>pd/add (ingame player name)</b> - adds player to the Paris database<br></li>  
+                                    <li><b><em>pd/get (ingame player name)</em></b> - gets general player information from Paris database<br></li>  
+                                    <li><b><em>pd/get (plot number)</em></b> - gets general player information from Paris database<br></li>  
+                                    <li><b><em>pd/set (plot number) evict</em></b> - evicts player from plot, not literally on the minecraft server<br></li>  
+                                    <li><b><em>pd/set (plot number) perm</em></b> - permanently sets player resident plot to unevictable<br></li>  
+                                    <li><b>pd/give (department key) (member mention)</b> - gives a member a discord role<br></li>
+                                    <li><b>pd/save</b> - saves the current data into a file<br></li>
+                                </ul>
+                                <b>Please ask Zeus_the_boss as many questions as needed before first using the bot!</b>
+                            </p>
+    
+                        <h3>Discord Channels</h3>
+                            <p>
+                                #maintenance-info is all useful information needed to be known when a part of this department.<br>
+                                #maintenance-projects is where all the detailed project overviews will be posted with the addition of any updates to the department.<br>
+                                #maintenance-general is the general chat only accessible to your department members.<br>
+                                Conference Room is the voice channel meant to enhance communication between department members.<br>          
+                            </p>
+    
+                        <h3>In-game Commands</h3>
+                            <p>
+                                <ul style="text-align: left;">
+                                    <li><b>/mail send (player name) (message)</b> - sending ingame mail<br></li>
+                                    <li><b>/player (player name)</b> - player profiles<br></li>
+                                    <li><b>/towny map big</b> - towny map of surrounding area<br></li>
+                                    <li><b>/plot fs</b> - puts a plot "for sale" for a player to claim<br></li>
+                                    <li><b>/plot nfs</b> - puts a plot "not for sale"<br></li>
+                                    <li><b>/plot set (type)</b> - sets plot type, useful for making embassy plots<br></li>
+                                    <li><b>/help</b> - You should be knowledgeable in many other commands as well.<br></li>
+                                </ul>
+                            </p>            
+    
+                        <h3>Pro tips</h3>
+                            <p>
+                                It will be very common to find pampered roads, it will be up to you to fix them. Additionally, removed leaves on plot corners are ok and do not need to be replaced.<br> 
+                            </p>
+                            <img src="maintenancepic.jpg" alt="maintenancepic">
+                            <p>
+                                When trying to remove locked chests on evicted plots, try to catch the owner of these locked chests online to make them physically remove the chests themselves by private messaging them. If they are not a resident of Paris, you will definitely need to know how to set a town plot type to embassy and then back to plot type regular. Otherwise, if there is no way to contact the owner of the chests, proceed with plot eviction and leave the locked chests on the plot for mayors/server staff to remove eventually. Mayors should be making weekly plot inspections for removing protections. Unless members of this department can…
+                            </p>
+                            <p>
+                                <hr>
+                                <h3>Support Ticket (example)</h3>
+                                <p>
+                                    Hello, I am the <em><b>mayor/helper</b></em> of Paris. In our town rules we say that residents who own town plots can get evicted if (1) their house is not well done (ex. box house, unfinished house) AND (2) they have been inactive for 7+ days in a row. Recently, we cleared <em><b>X#</b></em> resident plots that had these criteria. However we cannot clear everything on these plots because they have locked containers and doors which are owned by the evicted member. Is there a way to remove them? Thank you.<br>
+                                    Plots with protections:<br>
+                                    (e.g)(-573, 265)<br>
+                                    (e.g)(-572, 263)<br>
+                                    (e.g)(-572, 260)<br>
+                                    (pictures of plots)<br>       
+                                </p>
+                                <hr>
+                            </p>
+                            <p>
+                                It is highly recommended for members of this department to discuss together the removal of a borderline/subpar house. If you have doubts about a house, ask others for their opinions, but please don’t be too picky!<br>
+                            </p>
+    
+                        <h3>Extra info</h3>
+                            <p>
+                                This is the hardest department to master, therefore, making members of this department highly valued.<br>
+                                Members of this department could earn extra ingame money from mayors for clearing unsatisfactory residential plots and patrolling/checking town borders.<br>
+                                If you need help or have any questions about the department please ask other members in the department first before asking help from mayors.<br>
+                                When new members join this department it is highly recommended for senior members of the department to coach them.<br>
+                            </p>
+                </div>
+            </div>
+        
+            <div id="building">
+                <div class="container">
+                    <h2 style="text-align: center;">Building<h2>
+                        <h3>Mission Statement</h3>
+                            <p>We build Paris from the ground up to demonstrate our commitment as a community by building wonders which reflect our skills as builders of Paris.</p> 
+     
+                        <h3>Members</h3>
+                            <nav>
+                                <ul>
+                                    <li class="player"><img src="HalfRoyal.png" alt="HalfRoyal" class="headpic"><div class="name">HalfRoyal</div></li>
+                                    <li class="player"><img src="pbean8.png" alt="pbean8" class="headpic"><div class="name">pbean8</div></li>
+                                    <li class="player"><img src="al6230.png" alt="al6230" class="headpic"><div class="name">al6230</div></li>
+                                    <li class="player"><img src="PawsUp123.png" alt="PawsUp123" class="headpic"><div class="name">PawsUp123</div></li>
+                                    <li class="player"><img src="Zeus_the_boss.png" alt="Zeus_the_boss" class="headpic"><div class="name">Zeus_the_boss</div></li>
+                                    <li class="player"><img src="Hades_the_boss.png" alt="Hades_the_boss" class="headpic"><div class="name">Hades_the_boss</div></li>
+                                    <li class="player"><img src="Carnivul.png" alt="Carnivul" class="headpic"><div class="name">Carnivul</div></li>
+                                    <li class="player"><img src="woofvs.png" alt="woofvs" class="headpic"><div class="name">woofvs</div></li>
+                                    <li class="player"><img src="Id0nTkN0W06.png" alt="Id0nTkN0W06" class="headpic"><div class="name">Id0nTkN0W06</div></li>
+                                    <li class="player"><img src="GiaoNinja.png" alt="GiaoNinja" class="headpic"><div class="name">GiaoNinja</div></li>
+                                    <li class="player"><img src="Dominic_Ez.png" alt="Dominic_Ez" class="headpic"><div class="name">Dominic_Ez</div></li>
+                                    <li class="player"><img src="KristerTheSlayer.png" alt="KristerTheSlayer" class="headpic"><div class="name">KristerTheSlayer</div></li>
+                                    <li class="player"><img src="Biodegradables.png" alt="Biodegradables" class="headpic"><div class="name">Biodegradables</div></li>
+                                    <li class="player"><img src="lasthenia.png" alt="lasthenia" class="headpic"><div class="name">lasthenia</div></li>
+                                    <li class="player"><img src="XV_Will_VX.png" alt="XV_Will_VX" class="headpic"><div class="name">XV_Will_VX</div></li>
+                                    <li class="player"><img src="dvmpster.png" alt="dvmpster" class="headpic"><div class="name">dvmpster</div></li>
+                                    <li class="player"><img src="GrandmaBettsy.png" alt="GrandmaBettsy" class="headpic"><div class="name">GrandmaBettsy</div></li>
+                                    <li class="player"><img src="Garruk_oftheVeil.png" alt="Garruk_oftheVeil" class="headpic"><div class="name">Garruk_oftheVeil</div></li>
+                                    <li class="player"><img src="tjc_the_beast.png" alt="tjc_the_beast" class="headpic"><div class="name">tjc_the_beast</div></li>
+                                    <li class="player"><img src="purple12340.png" alt="purple12340" class="headpic"><div class="name">purple12340</div></li>
+                                </ul>
+                            </nav>
+    
+                        <h3>Location</h3>
+                            <p>West wing department building room 3</p>
+    
+                        <h3>Prospects</h3>
+                            <p>
+                                Resources used for building town projects are found at the resource department and should only be used for town projects.<br>
+                                Builders do not build or destroy on <b>private</b> property in the town, like for example housing. Instead they will be building large scale builds on <b>public</b> property.<br>
+                                Please do not mess with already completed builds! If you have suggestions for change tho, you can talk to the mayors.<br>
+                                New projects will be posted with the addition of a schematics file if necessary. You will get a proper overview of upcoming projects after the previous projects are completed. If you have any questions please ask mayors or assistants.<br>
+                                If blueprints/schematics files are not provided in a project overview, then you may improvise builds. Additionally, all the schematics/builds we send out are authentically made by Zeus and Hades!<br>
+                                If something does not look right in the town report it to mayors/assistants.<br>
+                            </p>
+
+                        <h3>Discord Channels</h3>
+                            <p>
+                                #building-info is all useful information needed to be known when a part of this department<br>
+                                #building-projects is where all the detailed project overviews will be posted with the addition of any updates to the department.<br>
+                                #building-general is the general chat only accessible to your department members.<br>
+                                Conference Room is the voice channel meant to enhance communication between department members.<br>                        
+                            </p>
+    
+                        <h3>In-game Commands</h3>
+                            <p>
+                                <ul style="text-align: left;">
+                                    <li><b>Know how to use schematics</b></li>
+                                    <li><b>/help</b> - You should be knowledgeable in many other commands as well.<br></li>
+                                </ul>
+                            </p>            
+    
+                        <h3>Pro tips</h3>
+                            <p>
+                                Builders are highly recommended to get Litematica (1.13 +) to assist in building wonders in version 1.15.2 and higher.<br>
+                                <ol style="list-style-type: circle;">
+                                    <li>If you are interested in getting Litematica (1.13 +) watch this video for help (mod files are linked in the video description): <a href="https://www.youtube.com/watch?v=aMZSXAKZzpo">Litematica video</a><br></li>
+                                    <li>Litematica is not as user friendly as Schematica, however it has a ton more features.<br></li>
+                                    <li>If you need help with downloading or understanding how schematics work contact mayor Zeus_the_boss for assistance.<br></li>
+                                </ol>
+                                Builders have the option, but not recommended, to get Schematica (1.8 - 1.12) to assist in building wonders in version 1.12.2 and lower.<br>
+                                <ol style="list-style-type: circle;">
+                                    <li>If you are interested in getting Schematica (1.8 - 1.12) watch this video for help (mod files are linked in the video description): <a href="https://www.youtube.com/watch?v=cuFbCTBho-g">Schematica video</a><br></li>
+                                    <li>Because Schematica is out of date in the latest version, we will not be using it at all in building on the server, however Schematica is a great mod to start with as a beginner in using schematics.<br></li>
+                                    <li>If you need help with downloading or understanding how schematics work contact mayor Zeus_the_boss for assistance.<br></li>
+                                </ol>
+                                Builders will also have the option, but not recommended, to get world downloads of builds to assist in building wonders.<br>
+                                <ol style="list-style-type: circle;">
+                                    <li>This is an extra option meant for those who are not or can not download schematics mods.<br></li>
+                                    <li>Fair warning: It will be a lot harder to build large structures while jumping between two worlds.<br></li>
+                                    <li>If you need help with world downloads contact mayor Zeus_the_boss for assistance.<br></li>
+                                </ol>
+                                DO NOT USE THE PRINT FUNCTION, Mayors are not responsible for your server bans if using this function. By downloading our schematic files you acknowledge this statement.<br>
+                            </p>
+    
+                        <h3>Extra info</h3>
+                            <p>
+                                Joining the ingame builder job will help you earn more money.<br>
+                                If you need help or have any questions about the department please ask other members in the department first before asking help from mayors.<br>
+                                When new members join this department it is highly recommended for senior members of the department to coach them.<br>
+                            </p>    
+                </div>
+            </div>
+    
+            <div id="resources">
+                <div class="container">
+                    <h2 style="text-align: center;">Resources<h2>
+                        <h3>Mission Statement</h3>
+                            <p>From roaming to ravaging, our purpose to collect quantity over quality is the best bet we have.</p> 
+     
+                        <h3>Members</h3>
+                            <nav>
+                                <ul>
+                                    <li class="player"><img src="al6230.png" alt="al6230" class="headpic"><div class="name">al6230</div></li>
+                                    <li class="player"><img src="Id0nTkN0W06.png" alt="Id0nTkN0W06" class="headpic"><div class="name">Id0nTkN0W06</div></li>
+                                    <li class="player"><img src="pbean8.png" alt="pbean8" class="headpic"><div class="name">pbean8</div></li>
+                                    <li class="player"><img src="XV_Will_VX.png" alt="XV_Will_VX" class="headpic"><div class="name">XV_Will_VX</div></li>
+                                    <li class="player"><img src="KristerTheSlayer.png" alt="KristerTheSlayer" class="headpic"><div class="name">KristerTheSlayer</div></li>
+                                    <li class="player"><img src="purple12340.png" alt="purple12340" class="headpic"><div class="name">purple12340</div></li>
+                                    <li class="player"><img src="HalfRoyal.png" alt="HalfRoyal" class="headpic"><div class="name">HalfRoyal</div></li>
+                                    <li class="player"><img src="NathJames.png" alt="NathJames" class="headpic"><div class="name">NathJames</div></li>
+                                    <li class="player"><img src="dvmpster.png" alt="dvmpster" class="headpic"><div class="name">dvmpster</div></li>
+                                    <li class="player"><div class="name">brkingo</div></li>
+                                    <li class="player"><div class="name">Oi_ozzy</div></li>
+                                </ul>
+                            </nav>
+    
+                        <h3>Location</h3>
+                            <p>East wing department building</p>
+    
+                        <h3>Prospects</h3>
+                            <p>
+                                If you catch anyone using massive amounts of resources from the stockpile not related to department needs, notify mayors, and/or warn them to not use resources.<br>
+                                Of course, if someone takes 1 or 2 stacks of wood for their house, it’s really not a big deal and is in fact acceptable. It is large scale use that is illegal.<br>
+                                If something does not look right in the town report it to mayors/assistants.<br>
+                            </p>
+
+                        <h3>Discord Channels</h3>
+                            <p>
+                                #resources-info is all useful information needed to be known when a part of this department<br>
+                                #resources-projects is where all the detailed project overviews will be posted with the addition of any updates to the department.<br>
+                                #resources-general is the general chat only accessible to your department members.<br>
+                                Conference Room is the voice channel meant to enhance communication between department members.<br>                        
+                            </p>
+    
+                        <h3>In-game Commands</h3>
+                            <p>
+                                <ul style="text-align: left;">
+                                    <li><b>/rtp</b> - randomly teleports you in the world you are currently in</li>
+                                    <li><b>There should always be a resource world on the server.</b></li>
+                                    <li><b>/help</b> - You should be knowledgeable in many other commands as well.<br></li>
+                                </ul>
+                            </p>            
+    
+                        <h3>Pro tips</h3>
+                            <p>
+                                Because many of the other departments are dependent on this department, the more organized this department is, the more effective the department would work. This would require special protections throughout the stockpile of resources.<br>
+                                Having a list of resources needed by other departments will help organize the department.<br>
+                            </p>
+    
+                        <h3>Extra info</h3>
+                            <p>
+                                Joining an ingame job will help you earn more money for collecting resources.<br>
+                                If you need help or have any questions about the department please ask other members in the department first before asking help from mayors.<br>
+                                When new members join this department it is highly recommended for senior members of the department to coach them.<br>
+                            </p>    
+                </div>
+            </div>
+    
+            <div id="commerce">
+                <div class="container">
+                    <h2 style="text-align: center;">Commerce<h2>
+                        <h3>Mission Statement</h3>
+                            <p>Continuously providing our customers with quality goods and services at the lowest possible price.</p> 
+     
+                        <h3>Members</h3>
+                            <nav>
+                                <ul>
+                                    <li class="player"><img src="al6230.png" alt="al6230" class="headpic"><div class="name">al6230</div></li>
+                                </ul>
+                            </nav>
+    
+                        <h3>Location</h3>
+                            <p>West wing department building room 4</p>
+    
+                        <h3>Prospects</h3>
+                            <p>
+                                Paris Shops will be located south of town spawn, inside the Grand Palais. With the addition of town farms and the map art market.<br>
+                                Resources from the resource department may only be used for building shops. You are not allowed to use resources from the resource department to sell items as a means of personal profit.<br>
+                                We plan to build a prosperous server macro shop which can provide many materials for the public. Eventually, as ambition as it may sound, our goal is to reach a point where the shop is non profit.<br>
+                                We also plan to build a server micro shop for individuals who wish to own a small part of a large set of small shops.<br>
+                                If something does not look right in the town report it to mayors/assistants.<br>
+                            </p>
+
+                        <h3>Discord Channels</h3>
+                            <p>
+                                #commerce-info is all useful information needed to be known when a part of this department<br>
+                                #commerce-projects is where all the detailed project overviews will be posted with the addition of any updates to the department.<br>
+                                #commerce-general is the general chat only accessible to your department members.<br>
+                                Conference Room is the voice channel meant to enhance communication between department members.<br>                        
+                            </p>
+    
+                        <h3>In-game Commands</h3>
+                            <p>
+                                <ul style="text-align: left;">
+                                    <li><b>/auc</b> or <b>/ah</b> - auction menu</li>
+                                    <li><b>Should get the ingame ability to create chestshops.</b></li>
+                                    <li><b>/help</b> - You should be knowledgeable in many other commands as well.<br></li>
+                                </ul>
+                            </p>            
+    
+                        <h3>Pro tips</h3>
+                            <p>
+                                As mayor, I never got the chance to make a shop, therefore, I do not have any tips on how to make a successful shop. I will be very lenient towards this department hoping to be very flexible with department decisions. However, we still have specific goals to achieve.<br>
+                                It will be up to the department to find the best prices for objects to be sold and bought.<br>
+                            </p>
+    
+                        <h3>Extra info</h3>
+                            <p>
+                                If you need help or have any questions about the department please ask other members in the department first before asking help from mayors.<br>
+                                When new members join this department it is highly recommended for senior members of the department to coach them.<br>
+                            </p>   
+                </div>
+            </div>
+    
+            <div id="mapart">
+                <div class="container">
+                    <h2 style="text-align: center;">Map Art<h2>
+                        <h3>Mission Statement</h3>
+                            <p>We enhance player lives through fun, inspiration, and creativity by building map art which everyone can appreciate.</p> 
+     
+                        <h3>Members</h3>
+                            <nav>
+                                <ul>
+                                    <li class="player"><img src="al6230.png" alt="al6230" class="headpic"><div class="name">al6230</div></li>
+                                    <li class="player"><img src="Id0nTkN0W06.png" alt="Id0nTkN0W06" class="headpic"><div class="name">Id0nTkN0W06</div></li>
+                                </ul>
+                            </nav>
+    
+                        <h3>Location</h3>
+                            <p>West wing department building room 5</p>
+    
+                        <h3>Prospects</h3>
+                            <p>
+                                All map art builds will be built outside of Paris in a separate town far from the main one.<br>
+                                Any map arts that want to be built (public or private) will need to get a light inspection from town mayors to check for sanity which includes but not limited to inappropriate propaganda, violence, and resources used.<br>
+                                The map art department will be split into 2 separate sectors. The first being the Public Sector, and the second being the Private Sector.<br>
+                                Here is how it’s going to work:
+                                <ol style="list-style-type: circle;"><b>Public Sector</b>
+                                    <li>Map arts are requested and built depending on majority rule and/or mayors.<br></li>
+                                    <li>When building public map art the use of the resource dept is highly encouraged.<br></li>
+                                    <li>Anyone who helps build public map arts will be given credit for building the map art. <br></li>
+                                    <li>Whoever proposed a public map art will NOT be credited for having proposed the map art. We encourage those who want to be credited for their proposal to build map art in the Private Sector.<br></li>
+                                    <li>Public map art will be sold under the name of the town. This means that whoever sells the public map art <b>must</b> deposit the profits into the town bank. <br></li>
+                                    <li>The public sector can help against conflicting individuals who all want to do the same private map art.<br></li>
+                                    <li>If you are a member who does not have any ideas for map arts and just wants to help, this sector is for you.<br></li>
+                                    <li>The public sector will be limited to <b>2</b> map arts built at once.<br></li>
+                                </ol>
+                                <ol style="list-style-type: circle;"><b>Private Sector</b>
+                                    <li>Map arts are requested and built by individuals. This means that to proceed in building a private map art, <b>ONE</b> player has to be signed onto the map art.<br></li>
+                                    <li>When building private map art the use of the resource department is highly <b>dis</b>couraged. Obviously there are some exceptions to this, please talk to town mayors for approval before using the resource department. Otherwise if you are not allowed, please collect the resource you need on your own.<br></li>
+                                    <li>Outside town members are allowed to help build, however their credit will completely depend on the owner of the map art.<br></li>
+                                    <li>Whoever proposed a private map art must claim their map art privately with town mayors. If you seek public opinion on whether or not you should build your private map art, mayors are not responsible for stolen map art ideas.<br></li>
+                                    <li>Private map art will be sold under the name of who ever owns the map art. This means that whoever sells the private map art <b>must</b> give the profits to the owner of the map art. <br></li>
+                                    <li>Private co-ops are not restricted, however <b>ONE</b> player must claim the map art. This is to avoid any conflicting issues which includes single player chestshops and unbalanced workloads. If multiple players seek private ownership of one map art, the public sector can be an easy solution. This is why we encourage map art owners to claim map arts privately with town mayors.<br></li>
+                                    <li>Private map art owners can only work on <b>ONE</b> map art at time, you are not allowed to claim more than one map art at once.<br></li>
+                                </ol>
+                                All original map arts could be stored in the louvre and copies will be sold at the Paris shop (public and private).<br>
+                                If something does not look right in the town report it to mayors/assistants.<br>
+                            </p>
+
+                        <h3>Discord Channels</h3>
+                            <p>
+                                #map-art-info is all useful information needed to be known when a part of this department<br>
+                                #map-art-projects is where all the detailed project overviews will be posted with the addition of any updates to the department.<br>
+                                #map-art-general is the general chat only accessible to your department members.<br>
+                                Conference Room is the voice channel meant to enhance communication between department members.<br>                        
+                            </p>
+    
+                        <h3>In-game Commands</h3>
+                            <p>
+                                <ul style="text-align: left;">
+                                    <li><b>/res friend add (player)</b> - friend members for mutual permissions</li>
+                                    <li><b>/help</b> - You should be knowledgeable in many other commands as well.<br></li>
+                                </ul>
+                            </p>            
+    
+                        <h3>Pro tips</h3>
+                            <p>
+                                Our most highly recommended program to use includes: <a href="https://htmlpreview.github.io/?https://github.com/azdin2/minecraft-map-art-helper/blob/master/minecraft-map-art-helper.htm">Map Art Program</a><br>
+                                The directions you need are written on the website, but always remember to select “Craig’s formula” and make sure the image you select in 128x128 pixels. This is a very user friendly program.<br>
+                                Try not to build overly detailed map-arts, important features may become unrecognizable!<br>
+                                <b>Maps can be locked when using a glass pane in a cartography table. This creates a new Map containing the same data and locks it. All copies of this new map are also locked. A locked map never changes, even when the depicted terrain changes.</b><br>
+
+                            </p>
+    
+                        <h3>Extra info</h3>
+                            <p>
+                                Joining the ingame builder job will help you earn more money.<br>
+                                This department will also be given the ability to sell map art with the assistance of the commerce department or not.<br>
+                                If you need help or have any questions about the department please ask other members in the department first before asking help from mayors.<br>
+                                When new members join this department it is highly recommended for senior members of the department to coach them.<br>
+                            </p> 
+                </div>
+            </div>
+    
+            <div id="terraforming">
+                <div class="container">
+                    <h2 style="text-align: center;">Terraforming<h2>
+                        <h3>Mission Statement</h3>
+                            <p>The first responders to town expansion, our destruction and terraforming sets up the land which we live on.</p> 
+     
+                        <h3>Members</h3>
+                            <nav>
+                                <ul>
+                                    <li class="player"><img src="pbean8.png" alt="pbean8" class="headpic"><div class="name">pbean8</div></li>
+                                    <li class="player"><img src="Id0nTkN0W06.png" alt="Id0nTkN0W06" class="headpic"><div class="name">Id0nTkN0W06</div></li>
+                                    <li class="player"><img src="Carnivul.png" alt="Carnivul" class="headpic"><div class="name">Carnivul</div></li>
+                                    <li class="player"><img src="XV_Will_VX.png" alt="XV_Will_VX" class="headpic"><div class="name">XV_Will_VX</div></li>
+                                    <li class="player"><img src="HalfRoyal.png" alt="HalfRoyal" class="headpic"><div class="name">HalfRoyal</div></li>
+                                </ul>
+                            </nav>
+    
+                        <h3>Location</h3>
+                            <p>West wing department building room 6</p>
+    
+                        <h3>Prospects</h3>
+                            <p>
+                                You are allowed to use resources from the resource department for terraforming purposes only. Additionally, the resources you gain from terraforming could also be donated to the resource department.<br>
+                                Mainland Paris will be settled on an ocean so that terraforming can be done fast. Terraforming on an ocean will comprise of lava pouring onto the surface of water.<br>
+                                If something does not look right in the town report it to mayors/assistants<br>
+                            </p>
+
+                        <h3>Discord Channels</h3>
+                            <p>
+                                #terraforming-info is all useful information needed to be known when a part of this department<br>
+                                #terraforming-projects is where all the detailed project overviews will be posted with the addition of any updates to the department.<br>
+                                #terraforming-general is the general chat only accessible to your department members.<br>
+                                Conference Room is the voice channel meant to enhance communication between department members.<br>                        
+                            </p>
+    
+                        <h3>In-game Commands</h3>
+                            <p>
+                                <ul style="text-align: left;">
+                                    <li><b>/help</b> - You should be knowledgeable in many other commands as well.<br></li>
+                                </ul>
+                            </p>            
+    
+                        <h3>Pro tips</h3>
+                            <p>
+                                Terraforming on land masses will be the most self explanatory (ex. destroy mountains and/or flatten terrain). However because Paris is settled on an ocean, mountains are irrelevant and the water is already a flat surface we can take advantage of!<br>
+                                Most of Paris terraforming will require only lava buckets, and basic calculations.<br>
+                                Here is how it's done:
+                                <ol>
+                                    <li>Outline the region you want to terraform using the f3 + g Minecraft feature to help outline the chunks necessary to terraform. <br></li>
+                                    <li>Pour lava onto water in an efficient manner. <br></li>
+                                    <li>Fill in the missed wholes. Done!<br></li>
+                                </ol>
+                                Step 1 (ex. 3x2 chunks)<br>
+                                <img src="terra1.jpg" alt="Step 1">
+                                Step 2<br>
+                                <img src="terra2.jpg" alt="Step 2">
+                                Step 3<br>
+                                <img src="terra3.jpg" alt="Step 3">
+                            </p>
+    
+                        <h3>Extra info</h3>
+                            <p>
+                                Joining an ingame job will help you earn more money for destroying/collecting resources.<br>
+                                If you need help or have any questions about the department please ask other members in the department first before asking help from mayors.<br>
+                                When new members join this department it is highly recommended for senior members of the department to coach them.<br>
+                            </p>
+                </div>
+            </div>
+
+        </article>
+
+    <script>
+        function totopFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function changedeptcontainerandnav() {
+            var v = document.getElementById("deptcontainer");
+            var n = document.getElementById("deptnav");
+            var s = document.getElementById("sticky");
+            var w = (window.innerWidth);
+            var temp1 = w/2;
+            temp1 = temp1 - 400 - 220;
+            var marg = 220;
+            if(temp1 > 0)
+                marg = marg + temp1;
+            v.style.marginLeft = marg + "px";
+
+            if(temp1 <= 0){
+                var temp2 = w - 220;
+                if(temp2 < 800)
+                    v.style.width = temp2 + "px";
+            }
+            else{
+                v.style.width = "800px";
+            }
+            
+            //var theWidth = v.style.width;
+            if(w <= 800){
+                n.style.width = w + "px";
+                n.style.float = "none";
+                s.style.position = "relative";
+                v.style.width = w + "px";
+                v.style.marginLeft = "0px";
+            }
+            else{
+                n.style.width = "220px";
+                n.style.float = "left";
+                s.style.position = "sticky";
+            }
+        }
+
+        function ontooff(pageId){
+            var x = document.getElementById(pageId); 
+            if(x != null)
+                x.style.display = "none";
+        }
+        function offtoon(pageId){
+            var x = document.getElementById(pageId); 
+            if(x != null)
+                x.style.display = "block";
+        }
+        function page(hash){
+            return hash.substring(1);
+        }
+
+        function showPage(Id){
+            ontooff("recruitment");
+            ontooff("maintenance");
+            ontooff("building");
+            ontooff("resources");
+            ontooff("commerce");
+            ontooff("mapart");
+            ontooff("terraforming");
+            ontooff("dept")
+            offtoon(Id);
+        }
+
+        location.hash = "";
+        location.hash = "dept";
+
+        window.addEventListener("hashchange", function(){
+            showPage(page(location.hash));
+            totopFunction();
+        })
+    </script>      
+</body>
+    
+</html>
